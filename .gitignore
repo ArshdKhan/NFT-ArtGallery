@@ -1,0 +1,85 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+coverage.json
+
+# Production
+build/
+dist/
+frontend/build/
+
+# Hardhat
+cache/
+artifacts/
+typechain/
+typechain-types/
+
+# Truffle (legacy)
+.openzeppelin/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Hardhat
+deployments/
+tmp/
+
+# Local Blockchain
+ganache/
+
+# Generated contract artifacts
+frontend/src/contracts/*
+!frontend/src/contracts/.gitkeep
+
+node_modules
+.env
+
+# Hardhat files
+/cache
+/artifacts
+
+# TypeChain files
+/typechain
+/typechain-types
+
+# solidity-coverage files
+/coverage
+/coverage.json
+
+# Hardhat Ignition default folder for deployments against a local node
+ignition/deployments/chain-31337
+
+*.rar

@@ -1,0 +1,54 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chainsafe/libp2p-noise": "^16.1.0",
+    "@chainsafe/libp2p-yamux": "^7.0.1",
+    "@helia/unixfs": "^5.0.0",
+    "@libp2p/bootstrap": "^11.0.33",
+    "@libp2p/identify": "^3.0.28",
+    "@libp2p/websockets": "^9.2.9",
+    "@libp2p/webtransport": "^5.0.38",
+    "@metamask/detect-provider": "^2.0.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.8.4",
+    "blockstore-core": "^5.0.2",
+    "bootstrap": "^5.3.5",
+    "helia": "^5.3.0",
+    "libp2p": "^2.8.3",
+    "react": "^19.1.0",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.5.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
