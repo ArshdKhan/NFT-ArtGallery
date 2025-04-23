@@ -90,16 +90,6 @@ const NFTDetails = ({ web3, contract, account }) => {
     setSuccess(null);
     
     try {
-      // Store Helia instance to preserve IPFS connection
-      const { getHeliaInstance } = await import('../utils/ipfsService');
-      const heliaInstance = getHeliaInstance();
-      console.log("Preserving Helia connection during NFT purchase:", heliaInstance);
-      
-      console.log(`Attempting to buy NFT #${id} with price: ${nft.price} ETH (${nft.priceWei} wei)`);
-      console.log(`Current account: ${account}`);
-      console.log(`NFT owner: ${nft.owner}`);
-      console.log(`NFT for sale status: ${nft.isForSale}`);
-      
       // Double-check NFT details directly from contract before purchase
       try {
         const isForSale = await contract.isForSale(id);
@@ -198,11 +188,6 @@ const NFTDetails = ({ web3, contract, account }) => {
     setSuccess(null);
     
     try {
-      // Get and store the Helia instance reference before the transaction
-      const { getHeliaInstance } = await import('../utils/ipfsService');
-      const heliaInstanceBefore = getHeliaInstance();
-      console.log("Preserving Helia connection during listing:", heliaInstanceBefore);
-      
       // Convert price from ETH to Wei
       const priceInWei = etherToWei(resalePrice);
       
@@ -227,11 +212,6 @@ const NFTDetails = ({ web3, contract, account }) => {
       
       // Clear the input field
       setResalePrice('');
-      
-      // Check Helia connection is still valid
-      const heliaInstanceAfter = getHeliaInstance();
-      console.log("Checking Helia connection after listing:", 
-        heliaInstanceAfter.heliaNode === heliaInstanceBefore.heliaNode ? "Connection preserved" : "Connection changed");
       
       // Navigate after a delay, passing state to indicate where we came from
       setTimeout(() => {
