@@ -28,7 +28,7 @@ A full-stack NFT Art Gallery application that allows users to mint, view, and tr
 
 1. Clone the repository:
 ```
-git clone <repository-url>
+git clone https://github.com/ArshdKhan/NFT-ArtGallery/
 cd NFTArtGallery
 ```
 
